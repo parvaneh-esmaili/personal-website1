@@ -1,12 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-
 .navbar{
-    background-color: rgb(34, 150, 165);
-    height:25px;
+  background-color: rgb(34, 150, 165);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:25px;
+
+}
+
+.navbar .left, .right{
+    
+   
     display: flex;
     list-style:none;
     align-items:center;
-    justify-content: end;
+    justify-content: center;
     margin: 0px; 
     padding: 0 10px;
     
@@ -32,10 +40,8 @@
     display:flex;
     justify-content: end;
     align-items:center;
-    
-   
-  
   }
+
   .header .connect{
     width: 100px;
     height:50px;
@@ -56,7 +62,7 @@
     margin: 5px;
     border-right: 2px solid rgb(184, 184, 184);
     color:black;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
   }
   .header div a:hover{

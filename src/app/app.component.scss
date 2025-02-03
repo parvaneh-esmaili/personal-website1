@@ -1,10 +1,4 @@
-
-
-
-
-
-
-main {
+.main {
   background-image: url("/img/StockSnap_QJJQT2IVRS.jpg");
   background-color: rgba(34, 150, 165, 0.312);
   background-size: cover;
@@ -19,13 +13,13 @@ main {
   text-align: center;
 }
 
-main h1 {
-  font-size: 36px;
+.main h1 {
+  font-size: 70px;
   margin-bottom: 10px;
 }
 
-main p {
-  font-size: 18px;
+.main p {
+  font-size: 25px;
   max-width: 600px;
 }
 
@@ -35,20 +29,26 @@ main p {
   display: flex;
   justify-content:space-around;
   align-items: center;
-  font-weight: bold;
   color:white;
 
 }
 .boxes{
-  width:200px;
-  height: 230px;
+  width:250px;
+  height: 300px;
   border: solid 0.5px rgba(255, 255, 255, 0.116);
   background-color: rgb(34, 150, 165);
   box-shadow: 5px 10px 15px rgba(0,0,0,0.2);
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center; 
+  flex-direction: column;
  
+}
+.box .boxes i , h3{
+  font-size: 25px;
+}
+.box .boxes p{
+  font-size: 15px;
 }
 
 
@@ -96,22 +96,22 @@ main p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 80px;
+  height: 200px;
   color: aliceblue;
 }
 .footer a{
-  font-size: 50px;
+  font-size: 80px;
   color: white;
 }
 .footer .question{
-  font-size: 20px;
+  font-size: 38px;
   font-weight: bold;
 }
 .footer button{
-  width: 250px;
+  width: 300px;
   height:45px;
   background-color: aliceblue;
-  border-radius: 20px;
+  border-radius: 30px;
   border: solid 2px rgb(214, 251, 255);
   cursor: pointer;
   font-weight: bold;
