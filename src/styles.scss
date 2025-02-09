@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .navbar{
   background-color: rgb(34, 150, 165);
   display:flex;

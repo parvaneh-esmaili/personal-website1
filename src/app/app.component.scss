@@ -1,11 +1,9 @@
+
 .main {
-  background-image: url("/img/StockSnap_QJJQT2IVRS.jpg");
-  background-color: rgba(34, 150, 165, 0.312);
   background-size: cover;
   background-position: center;
-  width: auto;
-  height: 65vh;
-  color: white;
+  
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,14 +26,12 @@
   display: flex;
   justify-content:space-around;
   align-items: center;
-  color:white;
 }  
 
 .boxes{
   width:250px;
-  height: 300px;
+  height:300px;
   border: solid 0.5px rgba(255, 255, 255, 0.116);
-  background-color: rgb(34, 150, 165);
   box-shadow: 5px 10px 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content:center;
@@ -43,13 +39,6 @@
   flex-direction: column;
 }
 
-.box .boxes i , h3{
-  font-size: 25px;
-}
-
-.box .boxes p{
-  font-size: 15px;
-}
 
 
 
@@ -94,10 +83,7 @@
   color: aliceblue;
 }
 
-.footer a{
-  font-size: 80px;
-  color: white;
-}
+
 
 .footer .question{
   font-size: 38px;
