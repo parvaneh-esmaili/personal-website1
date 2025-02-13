@@ -3,4 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
-  
+@layer base{
+  :root {
+    box-sizing : border-box;
+    font-size : 62.5%;
+    height: 100%
+  }
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+}

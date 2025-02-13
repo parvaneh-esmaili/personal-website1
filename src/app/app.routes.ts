@@ -6,7 +6,10 @@ export const routes: Routes = [
         path: '',
         loadChildren: () =>
             import('./modules/website/website.module').then ((m) => m.WebsiteModule)
-    }
+    },
+  //admin
+  //userProfile
+  //login
 ];
 
 @NgModule({
