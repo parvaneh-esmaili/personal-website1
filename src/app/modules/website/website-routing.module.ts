@@ -12,15 +12,12 @@ const routes: Routes = [
   {path: '', component: WebsiteComponent, children:
     [
       {path: '', component: HomePageComponent, pathMatch: 'full'},
-
       {path: 'home', component: HomePageComponent},
       {path: 'aboutus', component: AboutusPageComponent},
       {path: 'our-services', component: OurServicesComponent},
       {path: 'contact-us', component: ContactUsComponent},
       {path: 'our-blog', component: OurBlogComponent},
       {path: 'our-projects', component: OurProjectsComponent}
-
-      
 
     ]
   }
