@@ -18,11 +18,22 @@
   </ul>
 </div>
 <div class="h-20 flex justify-end items-center border-b-2 border-solid border-gray-900 overflow-hidden">
-  <div class="flex items-center justify-end">
-    <a class="border-gray-700 border-r md:text-2xl px-1 md:px-3 " href="#">HOME</a>
+  <div class="flex gap-x-4 items-center justify-end">
+    <!-- <a class="border-gray-700 border-r md:text-2xl px-1 md:px-3 " href="#">HOME</a>
     <a class="border-gray-700 border-r md:text-2xl px-1 md:px-3 " [routerLink]="'/aboutus'">ABOUT US</a>
     <a class="border-gray-700 border-r md:text-2xl px-1 md:px-3 " [routerLink]="'/our-services'">OUR SERVICES</a>
-    <a class="border-gray-700 border-r md:text-2xl px-1 md:px-3 " [routerLink]="'/contact-us'">CONTACT US</a>
+    <a class="border-gray-700 border-r md:text-2xl px-1 md:px-3 " [routerLink]="'/contact-us'">CONTACT US</a> -->
+
+    <ul
+    class="border-gray-700 border-r md:text-2xl px-1 md:px-3 cursor-pointer p-2  hover:-translate-x-4 transition-all duration-300 " 
+    *ngFor="let i of headerLinkItems"
+    >
+      <li [routerLink]="i.link"
+          [routerLinkActive]="'text-red-600'"
+      >
+        {{i.title}}
+      </li>
+    </ul>
   </div>
   <div>
     <button class="w-28 h-14 text-white rounded bg-slate-700 border-solid border border-white mx-2 md:mx-4 cursor-pointer hover:bg-cyan-400">Buy now</button>

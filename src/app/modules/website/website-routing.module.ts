@@ -13,9 +13,9 @@ const routes: Routes = [
     [
       {path: '', component: HomePageComponent, pathMatch: 'full'},
       {path: 'home', component: HomePageComponent},
-      {path: 'aboutus', component: AboutusPageComponent},
-      {path: 'our-services', component: OurServicesComponent},
-      {path: 'contact-us', component: ContactUsComponent},
+      {path: 'aboutUs', component: AboutusPageComponent},
+      {path: 'ourServices', component: OurServicesComponent},
+      {path: 'contactUs', component: ContactUsComponent},
       {path: 'our-blog', component: OurBlogComponent},
       {path: 'our-projects', component: OurProjectsComponent}
 
