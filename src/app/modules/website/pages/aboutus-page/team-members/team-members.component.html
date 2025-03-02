@@ -1,0 +1,30 @@
+<div
+  class="w-full items-center grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-16"
+>
+  <ul
+    class="h-[32rem] w-[22rem] border-cyan-700 border-2 rounded-lg shadow-lg p-2 transition-transform hover:scale-105 duration-300"
+    *ngFor="let items of TeamMembers"
+  >
+    <img [src]="items.picture" class="w-[21rem] h-72 rounded-lg mb-5" />
+
+    <li class="flex flex-col items-center text-gray-800 font-semibold">
+      <div class="text-cyan-700 text-4xl mb-2">{{ items.name }}</div>
+      <div class="text-gray-600 text-2xl">{{ items.title }}</div>
+    </li>
+
+    <li class="flex justify-around items-center mx-20 my-6">
+      <div
+        [ngClass]="items.icon"
+        class="text-gray-500 cursor-pointer fa-2x"
+      ></div>
+      <div
+        [ngClass]="items.icon1"
+        class="text-gray-500 cursor-pointer fa-2x"
+      ></div>
+      <div
+        [ngClass]="items.icon2"
+        class="text-gray-500 cursor-pointer fa-2x"
+      ></div>
+    </li>
+  </ul>
+</div>

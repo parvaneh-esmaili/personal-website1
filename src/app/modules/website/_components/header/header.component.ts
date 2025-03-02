@@ -1,23 +1,18 @@
-import { NgFor} from '@angular/common';
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive} from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [
-    NgFor,
-    RouterLink,
-    RouterLinkActive
-  ],
+  imports: [NgFor, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   headerLinkItems = [
-    {title: 'Home', link: '/home'},
-    {title: 'About', link: '/aboutUs'},
-    {title: 'Services', link: '/ourServices'},
-    {title: 'Contact', link: '/contactUs'}
-  ]
-
+    { title: 'Home', link: '/home' },
+    { title: 'About', link: '/aboutUs' },
+    { title: 'Services', link: '/ourServices' },
+    { title: 'Contact', link: '/contactUs' },
+  ];
 }
