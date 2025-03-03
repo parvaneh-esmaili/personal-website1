@@ -12,7 +12,7 @@ export class HeaderComponent {
   headerLinkItems = [
     { title: 'Home', link: '/home' },
     { title: 'About', link: '/aboutUs' },
-    { title: 'Services', link: '/ourServices' },
+    {title: 'Services', link: '/ourServices'},
     { title: 'Contact', link: '/contactUs' },
   ];
 }
