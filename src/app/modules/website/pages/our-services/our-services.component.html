@@ -1,5 +1,14 @@
-<div class="flex justify-center items-center h-80 bg-cyan-700">
+<div>
+  <div class="flex justify-center items-center h-80 bg-cyan-700">
     <h1 class="text-sky-50 font-bold text-[40px]">Our Services</h1>
   </div>
-<div class="h-3/4">
-</div>
+
+<div *ngFor="let items of Services" class="flex justify-center items-center m-4 border p-2">
+<div class=" w-[50rem] h-[28rem] "><img [src]="items.picture"></div>
+<div class="w-[50rem] h-[28rem] flex flex-col justify-center items-center">
+<div class="text-4xl text-center font-semibold text-cyan-700">{{items.title}}</div>
+<div class="text-2xl text-center text-gray-500 mx-24 my-10">{{items.description}}</div>
+<button class="text-2xl bg-cyan-700 w-44 h-16 rounded-full hover:bg-cyan-800 duration-300 hover:scale-105 ">{{items.button}}</button>
+
+
+  

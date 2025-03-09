@@ -14,34 +14,30 @@ export class TeamMembersComponent {
       picture: 'https://placebeard.it/1280x720?random=9',
       name: 'Janic Valdes',
       title: 'Travel Agent',
-      icon: 'fa fa-facebook ',
-      icon1: 'fa fa-instagram ',
-      icon2: 'fa fa-twitter ',
     },
 
     {
       picture: 'https://placebeard.it/1280x720random=8',
       name: 'Austin Griffin',
       title: 'travel Agent',
-      icon: 'fa fa-facebook ',
-      icon1: 'fa fa-instagram ',
-      icon2: 'fa fa-twitter',
     },
     {
       picture: 'https://placebeard.it/1280x720random=7',
       name: 'Duris Hughes',
       title: 'travel Agent',
-      icon: 'fa fa-facebook',
-      icon1: 'fa fa-instagram',
-      icon2: 'fa fa-twitter',
     },
     {
       picture: 'https://placebeard.it/1280x720random=6',
       name: 'Brain viliams',
       title: 'travel Agent',
-      icon: 'fa fa-facebook',
-      icon1: 'fa fa-instagram',
-      icon2: 'fa fa-twitter',
-    },
+    
+    }
   ];
+
+    icons =[
+      {icon: 'fa fa-facebook'},
+      {icon: 'fa fa-instagram'},
+      {icon: 'fa fa-twitter'}
+    ]
+items: any;
 }
