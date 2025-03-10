@@ -2,13 +2,11 @@
   class="gap-x-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center mt-2"
 >
   <ul
-    class="m-10 border-cyan-700 border-2 rounded-lg shadow-lg bg-white p-4 transition-transform hover:scale-105"
-    *ngFor="let items of CardItems"
-  >
-    <li class="w-80 h-[24rem] mb-4 flex flex-col justify-center items-center">
-      <div class="fa-5x text-cyan-700 pb-10" [ngClass]="items.icon"></div>
-      <div class="text-5xl pb-5 font-semibold">{{ items.title }}</div>
-      <div class="text-2xl text-gray-600">{{ items.discription }}</div>
-    </li>
+    class="m-10 py-32 px-10 border-cyan-700 border-2 rounded-lg shadow-lg bg-white transition-transform hover:scale-105 flex flex-col justify-center items-center"
+    *ngFor="let items of CardItems">
+    
+      <li class="fa-5x text-cyan-700 pb-10" [ngClass]="items.icon"></li>
+      <li class="text-5xl pb-5 font-semibold">{{ items.title }}</li>
+      <li class="text-2xl text-gray-600">{{ items.discription }}</li>
   </ul>
 </div>

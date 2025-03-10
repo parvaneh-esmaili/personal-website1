@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
+import {RouterOutlet} from '@angular/router';
 import {HeaderComponent} from './_components/header/header.component';
-import {HomePageComponent} from './pages/home-page/home-page.component';
 import { FooterComponent } from './_component/footer/footer.component';
 
 @Component({

@@ -1,17 +1,16 @@
-<div class="w-full place-items-center grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-16 p-10">
+<div class="w-full place-items-center grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 m-10 lg:grid-cols-4">
   <ul
-    class="h-[32rem] w-[22rem] border-cyan-700 border-2 rounded-lg shadow-lg p-2 transition-transform hover:scale-105 duration-300"
+    class="h-[32rem] w-[22rem] border-cyan-700 border-2 rounded-lg shadow-lg p-2 hover:scale-105 duration-300 flex flex-col items-center text-gray-800 font-semibold"
     *ngFor="let items of TeamMembers">
+
     <img [src]="items.picture" class="w-[21rem] h-72 rounded-lg mb-5" />
-
-    <li class="flex flex-col items-center text-gray-800 font-semibold">
-      <div class="text-cyan-700 text-4xl mb-2">{{ items.name }}</div>
-      <div class="text-gray-600 text-2xl">{{ items.title }}</div>
-    </li>
-
+    <li class=""></li>
+    <li class="text-cyan-700 text-4xl mb-2">{{ items.name }}</li>
+    <li class="text-gray-600 text-2xl">{{ items.title }}</li>
     <li class="flex justify-around items-center mx-20 my-6 fa-2x text-gray-600">
-      <div class=" cursor-pointer hover:text-cyan-700" *ngFor="let items of icons">
-      <li [ngClass]="items.icon"></li>
-</div>
+
+    <div class=" cursor-pointer hover:text-cyan-700 p-6" *ngFor="let items of icons">
+    <li [ngClass]="items.icon"></li>
+   </div>
   </ul>
 </div>

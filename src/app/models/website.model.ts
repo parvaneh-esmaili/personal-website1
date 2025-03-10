@@ -1,35 +1,35 @@
 export class Website {
-    Name: string;
-    Email: string;
-    Message: string;
+    name: string;
+    email: string;
+    message: string;
 
     constructor(
-        Name: string = '',
-        Email: string = '',
-        Message: string = ''
+        name: string = '',
+        email: string = '',
+        message: string = ''
     ){
-        this.Name = Name;
-        this.Email = Email;
-        this.Message = Message;
+        this.name = name;
+        this.email = email;
+        this.message = message;
     }
 }
 
 export class WebsiteForLoad{
     id: number;
-    Name: string;
-    Email: string;
-    Message: string;
+    name: string;
+    email: string;
+    message: string;
 
     constructor(
         id: number= 0 ,
-        Name : string ='',
-        Email: string= '',
-        Message: string= ''
+        name : string ='',
+        email: string= '',
+        message: string= ''
         ){
             this.id = id;
-            this.Name = Name;
-            this.Email = Email;
-            this.Message = Message;
+            this.name = name;
+            this.email = email;
+            this.message = message;
         }
    
 }

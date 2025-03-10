@@ -19,8 +19,6 @@ const routes: Routes = [
       {path: 'contactUs', component: ContactUsComponent},
       {path:'ourServices',component: OurServicesComponent},
       {path: '**', component:NotfoundComponent}
-
-
     ]
   }
 ];
