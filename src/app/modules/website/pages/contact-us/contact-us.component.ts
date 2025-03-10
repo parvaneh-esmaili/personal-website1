@@ -14,10 +14,10 @@ export class ContactUsComponent {
   message: string = '';
 
   submitForm() {
-    console.log('Name:', this.name);
+    {item: console.log('Name:', this.name);}
     console.log('Email:', this.email);
     console.log('Message:', this.message);
-    alert('You have submited your message!');
+    alert('your message submited successfully!');
   };
   contactDetales=[
     {icon:'fa fa-location-arrow' ,item:' Address'},
