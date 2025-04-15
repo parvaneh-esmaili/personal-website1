@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="bg-cyan-700 h-screen w-1/5 shadow-md shadow-black flex flex-col justify-around">
+        <p class="text-5xl text-white  text-center m-10">logo</p>
+        <ul *ngFor="let i of sideBarItems">
+            <div class="flex justify-start items-center text-2xl text-white rounded-full m-2 px-8 py-4 cursor-pointer hover:bg-cyan-950 duration-100">
+                <li [ngClass]="i.logo" class="px-3"></li>            
+                <li [routerLink]="i.item">{{i.item}}</li>
+            </div>
+        </ul>
+        <button class="h-16 w-44 m-10 shadow-black shadow-lg rounded-full  bg-white text-cyan-950 font-semibold text-2xl hover:scale-105 duration-300">LOG OUT</button>
+    </div>
+</div>
+
+
+<app-profile></app-profile>

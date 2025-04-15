@@ -1,7 +1,7 @@
 import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Website } from '../../../../models/website.model';
+
 
 @Component({
   selector: 'app-contact-us',
@@ -18,7 +18,7 @@ export class ContactUsComponent {
     console.log('Name:', this.name);
     console.log('Email:', this.email);
     console.log('Message:', this.message);
-    alert('your message submited successfully!');
+    alert('Your message submited successfully!!');
   };
   contactDetales=[
     {icon:'fa fa-location-arrow' ,item:' Address'},

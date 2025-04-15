@@ -7,7 +7,12 @@ export const routes: Routes = [
         loadChildren: () =>
             import('./modules/website/website.module').then ((m) => m.WebsiteModule)
     },
-  //admin
+    {
+        path: 'admin',
+        loadChildren: () =>
+            import('./modules/admin/admin.module').then ((m) => m.AdminModule)
+    }
+  
   //userProfile
   //login
 ];

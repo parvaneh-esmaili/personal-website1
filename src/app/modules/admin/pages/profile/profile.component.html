@@ -1,0 +1,19 @@
+
+    <table class="table-auto w-full border-collapse border border-gray-300 text-2xl">
+        <thead class="bg-gray-500 h-28 text-white font-semibold" >
+            <tr class=>
+                <th>Name</th>
+                <th>Email</th>
+                <th>message</th>
+            </tr>
+        </thead>
+        <tbody class="border bg-red-400 w-full">
+            <tr *ngFor="let item of table"  class="bg-slate-100 h-24 text-2xl border-white border text-center">
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.message}}</td>
+            </tr>
+        </tbody>
+    </table>
+>
+  
