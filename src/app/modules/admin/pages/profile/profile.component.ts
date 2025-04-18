@@ -1,6 +1,5 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-profile',
   imports: [NgFor],
@@ -15,9 +14,9 @@ export class ProfileComponent {
 
   ];
 table=[
-  {name:'ali',email:'aaa@gmail.com', message:'hello personal website'},
-  {name:'hana',email:'aaa@gmail.com', message:'hello personal website'},
-  {name:'roya',email:'aaa@gmail.com', message:'hello personal website'},
-  {name:'sina',email:'aaa@gmail.com', message:'hello personal website'}
+  {name:'ali',email:'ali@gmail.com', message:'Hello personal website'},
+  {name:'hana',email:'hana@gmail.com', message:'Hello personal website'},
+  {name:'roya',email:'roya@gmail.com', message:'Hello personal website'},
+  {name:'sina',email:'sina@gmail.com', message:'Hello personal website'}
 ]
 }
