@@ -17,7 +17,7 @@ const routes: Routes = [
       {path:'profile', component:ProfileComponent},
       {path:'messages', component:MessagesComponent},
       {path:'help-center', component:HelpCenterComponent},
-      {path:'notoficatio', component:NotificationsComponent},
+      {path:'notifications', component:NotificationsComponent},
       {path:'setting', component:SettingComponent},
       {path:'folders', component:FoldersComponent}
     ]

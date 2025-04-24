@@ -23,6 +23,4 @@ export class ContactUsComponent {
    })
    
    {console.log('پیام کاربر دریافت شد:', data);};
-
-
 }

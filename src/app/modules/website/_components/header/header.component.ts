@@ -9,6 +9,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  logIn = 
+  { title: 'Log In', link: './admin'}
 
   headerLinkItems = [
     { title: 'Home', link: '/home' },
@@ -29,4 +31,5 @@ export class HeaderComponent {
     {barIcon:"fa fa-bars"},
     {barIcon:'fa fa-search'}
   ]
+
 }

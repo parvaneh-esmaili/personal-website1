@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { NotificationsComponent } from "../notifications/notifications.component";
 
 @Component({
   selector: 'app-help-center',
-  imports: [NotificationsComponent],
+  imports: [],
   templateUrl: './help-center.component.html',
   styleUrl: './help-center.component.scss'
 })

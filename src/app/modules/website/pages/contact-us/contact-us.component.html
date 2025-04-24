@@ -1,13 +1,13 @@
-<div class="flex justify-center items-center h-32 md:h-36 lg:h-40 bg-cyan-700">
-  <h1 class="text-sky-50 font-bold text-3xl md:text-4xl lg:text-5xl ">Contact Us</h1>
+<div class="flex justify-center items-center h-32 md:h-36 lg:h-40 bg-primary">
+  <h1 class="text-gray-light font-bold text-3xl md:text-4xl lg:text-5xl ">Contact Us</h1>
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 m-4">
-  <div class="bg-cyan-700 py-10 md:py-20 px-10 md:px-16 border-gray-700 border rounded-2xl w-[30rem] h-[40rem] md:w-[35rem] md:h-[40rem] shadow-xl lg:w-[45rem] lg:h-[50rem]">
-      <p class="text-4xl font-bold text-white" >Contact us...</p>    
-      <p class="text-2xl text-gray-200 my-10">We are here to help and answer any questions you might have.</p>
+  <div class="bg-primary py-10 md:py-20 px-10 md:px-16 border-text-dark border rounded-2xl w-[30rem] h-[40rem] md:w-[35rem] md:h-[40rem] shadow-xl lg:w-[45rem] lg:h-[50rem]">
+      <p class="text-4xl font-bold text-gray-light" >Contact us...</p>    
+      <p class="text-2xl text-gray-light my-10">We are here to help and answer any questions you might have.</p>
     <div>
-     <ul *ngFor="let i of contactDetales" class="text-2xl text-white ">
+     <ul *ngFor="let i of contactDetales" class="text-2xl text-gray-light ">
         <li [ngClass]="i.icon" class=" my-8">{{i.item}} </li>
       </ul>
     </div> 

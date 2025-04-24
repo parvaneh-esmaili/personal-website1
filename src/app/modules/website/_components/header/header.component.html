@@ -1,4 +1,4 @@
-<div class="h-10 bg-cyan-700 flex items-center justify-between text-white fa-2x ">
+<div class="h-10 bg-primary flex items-center justify-between text-gray-light fa-2x sticky top-0 ">
   <ul class="hover:scale-105 cursor-pointer" *ngFor="let i of navItems">
     <li>{{i.item}}</li>
     <li [ngClass]="i.icon"></li>
@@ -6,24 +6,18 @@
 </div>
 
 
-<div class="h-20 flex justify-end items-center border-b-2 border-solid border-gray-900 overflow-hidden">
+<div class="h-20 flex justify-between items-center border-b-2 border-solid border-text-dark overflow-hidden sticky top-10 bg-gray-light">
+
+  <a [routerLink]="'/admin'" class="h-16 w-52 m-10 rounded-lg border bg-cyan-950  text-white text-2xl hover:scale-105 hover:bg-cyan-900 duration-300 flex items-center justify-center">
+  LOG IN</a>
   <div class="flex gap-x-4 items-center justify-end">
     <ul class="border-gray-700 border-r md:text-2xl px-1 md:px-3 cursor-pointer p-2 hover:-translate-x-2 transition-all duration-300"
       *ngFor="let i of headerLinkItems">
       <li [routerLink]="i.link" [routerLinkActive]="'text-red-600'">{{ i.title }}</li>
     </ul>
+  <div class="flex fa-2x m-2 text-text-dark">
+    <ul class="m-2 cursor-pointer hover:scale-105 duration-300" *ngFor="let item of bar">
+      <li [ngClass]="item.barIcon"></li>
+    </ul>
   </div>
-
-
-  <div>
-    <button class="w-28 h-14 text-white rounded bg-slate-700 border-solid border
-    border-white mx-2 md:mx-4 cursor-pointer transition-transform hover:scale-105 duration-500">
-    Buy now </button>
-  </div>
-  
-
-  <div class="flex fa-2x  text-gray-600">
-<ul class="m-1 cursor-pointer hover:scale-105" *ngFor="let item of bar">
-  <li [ngClass]="item.barIcon"></li>
-</ul>
 </div>

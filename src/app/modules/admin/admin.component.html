@@ -1,9 +1,9 @@
+<app-header class="fixed top-0 w-full z-50"></app-header>
 
-<app-header></app-header>
+<div class="flex pt-28">
+  <app-side-bar class="fixed top-28 left-0 w-96 z-40"></app-side-bar>
 
-<div class="flex">
-  <app-side-bar class="w-96 bg-gray-200"></app-side-bar>
-  <div class="flex-1 p-4 bg-gray-100 overflow-auto">
+  <div class="ml-96 flex-1 px-6 bg-gray-100 min-h-screen relative ">
     <router-outlet></router-outlet>
   </div>
 </div>

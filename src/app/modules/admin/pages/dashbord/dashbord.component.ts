@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 
@@ -9,15 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './dashbord.component.scss'
 })
 export class DashbordComponent {
-  numbers=[
-    {number:1},
-    {number:2},
-    {number:3},
-    {number:4},
-    {number:5},
-    {number:6},
-    {number:7},
-    {number:8}
-
-  ]
+  radius = 16;
+  circumference = 2 * Math.PI * this.radius;
+  progress = 0.75;
+  dashOffset = this.circumference * (1 - this.progress);
+  
 }

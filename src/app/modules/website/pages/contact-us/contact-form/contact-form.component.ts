@@ -24,8 +24,6 @@ export class ContactFormComponent {
 
     this.formSubmitted.emit(formData); 
     alert('Your message submitted successfully!');
-    
-
     this.name = '';
     this.email = '';
     this.message = '';
