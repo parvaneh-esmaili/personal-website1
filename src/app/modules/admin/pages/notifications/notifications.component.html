@@ -1,13 +1,13 @@
-<table class="table-auto w-full border-collapse border border-gray-300 text-2xl">
-    <thead class="bg-gray-500 h-28 text-white font-semibold" >
+<table class="mt-6 table-auto w-full border-collapse border border-border-gray text-2xl">
+    <thead class="bg-primary-dark h-28 text-white font-semibold" >
         <tr>
             <th>Event</th>
             <th>Description</th>
             <th>Date</th>
         </tr>
     </thead>
-    <tbody class="border bg-red-400 w-full">
-        <tr *ngFor="let item of table"  class="bg-slate-100 h-24 text-2xl border-white border text-center">
+    <tbody class="border w-full">
+        <tr *ngFor="let item of table"  class="odd:bg-border-gray even:bg-gray-light h-24 text-2xl border-white border text-center">
             <td>{{item.event}}</td>
             <td>{{item.description}}</td>
             <td>{{item.date}}</td>
