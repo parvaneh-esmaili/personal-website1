@@ -22,8 +22,15 @@
       </li>
     </ul>
   
-    <a [routerLink]="'/home'" 
-      class="h-16 w-52 m-10 rounded-lg border bg-cyan-950  text-white text-2xl hover:scale-105 hover:bg-cyan-900 duration-300 flex items-center justify-center">
-      LOG OUT</a>
-  </div>
+
+    <div>
+      <app-button
+      [routerLink]="'/home'"
+      text="LogOut"
+      backgroundColor="bg-cyan-950"
+      textColor="text-gray-light">
+      </app-button>
+      
+    </div>
+
   

@@ -11,6 +11,9 @@ import { ContactFormComponent } from "./contact-form/contact-form.component";
   styleUrl: './contact-us.component.scss'
 })
 export class ContactUsComponent {
+updateButtonLabel($event: Event) {
+throw new Error('Method not implemented.');
+}
   contactDetales=[
     {icon:'fa fa-location-arrow' ,item:' Address'},
     {icon:'fa fa-phone' ,item:' 0912 345 6789'},
@@ -23,4 +26,6 @@ export class ContactUsComponent {
    })
    
    {console.log('پیام کاربر دریافت شد:', data);};
+
+   
 }

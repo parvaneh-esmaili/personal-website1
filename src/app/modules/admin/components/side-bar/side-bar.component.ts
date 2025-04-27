@@ -1,11 +1,11 @@
 import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { ButtonComponent } from '../../../../shares/button/button.component';
 
 @Component({
   selector: 'app-side-bar',
-  imports: [NgFor, RouterLink,],
+  imports: [NgFor, RouterLink, ButtonComponent],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.scss'
 })

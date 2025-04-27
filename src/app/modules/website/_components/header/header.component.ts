@@ -1,10 +1,11 @@
 import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ButtonComponent } from "../../../../shares/button/button.component";
 
 @Component({
   selector: 'app-header',
-  imports: [NgFor, RouterLink, RouterLinkActive, NgClass],
+  imports: [NgFor, RouterLink, RouterLinkActive, NgClass, ButtonComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -27,9 +28,4 @@ export class HeaderComponent {
     {icon:'fa fa-facebook-square'}
 
   ];
-  bar=[
-    {barIcon:"fa fa-bars"},
-    {barIcon:'fa fa-search'}
-  ]
-
 }

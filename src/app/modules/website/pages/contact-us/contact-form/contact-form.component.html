@@ -10,8 +10,11 @@
 
 <div class="mt-6 m-2 text-2xl text-white">Message</div>
 <textarea [(ngModel)]="message" class="w-5/6 border-text-dark border rounded-lg h-40 p-2" placeholder="Enter your message..."></textarea>
-
-<button (click)="submitForm()" class="w-52 h-12 lg:h-16 lg:m-6 bg-primary-dark border border-gray-light rounded-lg text-gray-light text-2xl hover:scale-105 duration-300">
-  Submit
-</button>
+<app-button
+(click)="submitForm()"
+text="Submit"
+backgroundColor="bg-cyan-950"
+textColor="text-gray-light"></app-button>
 </div>
+
+

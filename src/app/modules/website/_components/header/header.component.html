@@ -1,23 +1,58 @@
-<div class="h-10 bg-primary flex items-center justify-between text-gray-light fa-2x sticky top-0 ">
-  <ul class="hover:scale-105 cursor-pointer" *ngFor="let i of navItems">
-    <li>{{i.item}}</li>
-    <li [ngClass]="i.icon"></li>
+<div class="h-10 bg-primary flex items-center justify-between text-gray-light fa-2x sticky top-0 px-4">
+  
+
+  <ul class="flex gap-4 items-center m-4 text-2xl">
+    <li class="hover:scale-105 cursor-pointer m-2 duration-300" *ngFor="let i of navItems">
+      {{ i.item }}
+    </li>
   </ul>
+
+  <ul class="flex gap-4 items-center m-4">
+    <li class="hover:scale-105 duration-300 cursor-pointer m-2"  [ngClass]="i.icon" *ngFor="let i of navItems">
+      </li>
+  </ul>
+
 </div>
 
+<div class="h-20 flex items-center justify-between border-b-2 border-solid border-text-dark overflow-hidden sticky top-10 bg-gray-light px-4">
+  
 
-<div class="h-20 flex justify-between items-center border-b-2 border-solid border-text-dark overflow-hidden sticky top-10 bg-gray-light">
+  <div class="flex items-center gap-4">
 
-  <a [routerLink]="'/admin'" class="h-16 w-52 m-10 rounded-lg border bg-cyan-950  text-white text-2xl hover:scale-105 hover:bg-cyan-900 duration-300 flex items-center justify-center">
-  LOG IN</a>
-  <div class="flex gap-x-4 items-center justify-end">
-    <ul class="border-gray-700 border-r md:text-2xl px-1 md:px-3 cursor-pointer p-2 hover:-translate-x-2 transition-all duration-300"
-      *ngFor="let i of headerLinkItems">
-      <li [routerLink]="i.link" [routerLinkActive]="'text-red-600'">{{ i.title }}</li>
+    <ul class="flex gap-4 items-center">
+      <li *ngFor="let i of headerLinkItems"
+          class="border-gray-700 border-r md:text-2xl px-1 md:px-3 cursor-pointer p-2 hover:-translate-x-2 transition-all duration-300"
+          [routerLink]="i.link"
+          [routerLinkActive]="'text-red-600'">
+        {{ i.title }}
+      </li>
     </ul>
-  <div class="flex fa-2x m-2 text-text-dark">
-    <ul class="m-2 cursor-pointer hover:scale-105 duration-300" *ngFor="let item of bar">
-      <li [ngClass]="item.barIcon"></li>
-    </ul>
+
+    
+      <app-button
+      [routerLink]="'/admin'"
+      text="LogIn"
+      backgroundColor="bg-cyan-950"
+      textColor="text-gray-light">
+    </app-button>
+  
   </div>
+
+
+
+  <div>
+    
+    <svg width="220" height="100" viewBox="-30 0 300 100" fill="none">
+      <g>
+        <rect x="10" y="35" width="30" height="30" fill="#0e7490" />
+        <polygon points="30,20 50,20 30,50" fill="#1F2937" />
+        <polygon points="50,50 30,50 50,80" fill="#1F2937" />
+      </g>
+      <text x="70" y="50" font-family="Poppins, sans-serif" font-size="32" fill="#0e7490" font-weight="700">PERSONAL</text>
+      <text x="70" y="75" font-family="Poppins, sans-serif" font-size="14" fill="#1F2937" letter-spacing="2">
+        PERSONAL WEBSITE
+      </text>
+    </svg>
+
+
 </div>
